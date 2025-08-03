@@ -12,8 +12,8 @@ import {
 
 const AllLinks: FC = () => {
   return (
-    <NavigationMenu className='p-4 mt-8'>
-      <NavigationMenuList className='gap-8'>
+    <NavigationMenu className='p-2 sm:p-4 mt-4 sm:mt-8 w-full'>
+      <NavigationMenuList className='flex-nowrap gap-2 sm:gap-4 justify-center w-full text-sm sm:text-base'>
         <NavigationItem href='/experience' content={<ExperienceIcon />} />
         <NavigationItem href='/about' content={<AboutIcon />} />
         <NavigationItem href='/contact' content={<ContactIcon />} />

@@ -15,7 +15,7 @@ interface BreadcrumbWithIconProps {
 
 const BreadcrumbWithIcon: FC<BreadcrumbWithIconProps> = ({ icon }) => {
   return (
-    <Breadcrumb className='px-16'>
+    <Breadcrumb className='px-4 md:px-16'>
       <BreadcrumbList>
         <BreadcrumbItem>
           <BreadcrumbLink href='/'>
