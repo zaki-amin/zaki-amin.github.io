@@ -15,16 +15,16 @@ interface BreadcrumbWithIconProps {
 
 const BreadcrumbWithIcon: FC<BreadcrumbWithIconProps> = ({ icon }) => {
   return (
-    <Breadcrumb className='px-4 md:px-16'>
-      <BreadcrumbList>
+    <Breadcrumb className='px-1 py-1 md:px-8 md:py-3'>
+      <BreadcrumbList className="text-[10px] md:text-sm gap-0.5 md:gap-2">
         <BreadcrumbItem>
-          <BreadcrumbLink href='/'>
+          <BreadcrumbLink href='/' className="[&>svg]:w-3 [&>svg]:h-3 md:[&>svg]:w-5 md:[&>svg]:h-5">
             <HomeIcon />
           </BreadcrumbLink>
         </BreadcrumbItem>
-        <BreadcrumbSeparator />
+        <BreadcrumbSeparator className="[&>svg]:w-2.5 [&>svg]:h-2.5 md:[&>svg]:w-3.5 md:[&>svg]:h-3.5" />
         <BreadcrumbItem>
-          <BreadcrumbPage>{icon}</BreadcrumbPage>
+          <BreadcrumbPage className="whitespace-normal max-w-none">{icon}</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
