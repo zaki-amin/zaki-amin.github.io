@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
+
+const repoName = 'zaki-amin.github.io'; // Set this to your repo name
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  output: 'export',
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
+}
 
-export default nextConfig;
+module.exports = nextConfig
+
+export default nextConfig
