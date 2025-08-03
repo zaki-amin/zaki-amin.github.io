@@ -1,13 +1,15 @@
 import type { NextConfig } from 'next'
 
-const repoName = 'zaki-amin.github.io'; // Set this to your repo name
+const DEPLOYMENT_REPO = '/zaki-amin.github.io'
+const path = process.env.NODE_ENV === 'production' ? DEPLOYMENT_REPO : ''
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
+  images: {
+    unoptimized: true,
+  },
+  basePath: `${path}`,
+  assetPrefix: `${path}/`,
 }
-
-module.exports = nextConfig
 
 export default nextConfig
