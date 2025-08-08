@@ -30,7 +30,7 @@ export default function Experience() {
       <Subsection title='Previous roles'>
         <div className='space-y-4 px-2'>
           <PreviousRole
-            company='BidFX (now SGX FX)'
+            company='SGX FX'
             timespan='Apr - Aug 2023'
             description='Software engineer intern at a foreign exchange fintech, focusing on distributed systems and continuous integration (CI) pipelines using Java. I worked on architecting microservices, implemented a reporting tool to collect and analyse test results, and refactored regression test suites including UI automation tests.'
           />

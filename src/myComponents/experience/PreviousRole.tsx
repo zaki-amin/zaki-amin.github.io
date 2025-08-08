@@ -15,9 +15,9 @@ const PreviousRole: FC<PreviousRoleProps> = ({
     <div>
       <div className='flex justify-between'>
         <h3 className='font-extrabold'>{company}</h3>
-        <p className='text-gray-300 font-semibold'>{timespan}</p>
+        <p className='text-gray-400 font-semibold'>{timespan}</p>
       </div>
-      <p className='text-slate-400 font-light'>{description}</p>
+      <p className='text-slate-350 font-light'>{description}</p>
     </div>
   )
 }
