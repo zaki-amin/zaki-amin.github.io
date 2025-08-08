@@ -24,7 +24,7 @@ const BreadcrumbWithIcon: FC<BreadcrumbWithIconProps> = ({ icon }) => {
         </BreadcrumbItem>
         <BreadcrumbSeparator className="[&>svg]:w-2.5 [&>svg]:h-2.5 md:[&>svg]:w-3.5 md:[&>svg]:h-3.5" />
         <BreadcrumbItem>
-          <BreadcrumbPage className="whitespace-normal max-w-none">{icon}</BreadcrumbPage>
+          <BreadcrumbPage className="whitespace-normal max-w-none text-gray-400">{icon}</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>

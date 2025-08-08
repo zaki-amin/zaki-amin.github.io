@@ -12,6 +12,8 @@ export const metadata = {
 }
 
 export default function About() {
+  const ICON_SIZE = 14
+
   return (
     <>
       <BreadcrumbWithIcon icon={<ContactIcon />} />
@@ -23,14 +25,14 @@ export default function About() {
             <HoverLink
               href='https://www.linkedin.com/in/zaki-amin/'
               text='LinkedIn'
-              icon={<LinkedinIcon size={14} />}
+              icon={<LinkedinIcon size={ICON_SIZE} />}
             />
           </li>
           <li>
             <HoverLink
               href='https://github.com/zaki-amin'
               text='GitHub'
-              icon={<GithubIcon size={14} />}
+              icon={<GithubIcon size={ICON_SIZE} />}
             />
           </li>
         </ul>

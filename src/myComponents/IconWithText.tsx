@@ -15,18 +15,32 @@ const IconWithText: FC<IconWithTextProps> = ({ icon, text }) => {
   )
 }
 
+const ICON_SIZE = '16'
+
 export const HomeIcon: FC = () => {
-  return <IconWithText icon={<icons.House />} text='Home' />
+  return <IconWithText icon={<icons.House size={ICON_SIZE} />} text='Home' />
 }
 
 export const ExperienceIcon: FC = () => {
-  return <IconWithText icon={<icons.BriefcaseBusiness />} text='Experience' />
+  return (
+    <IconWithText
+      icon={<icons.BriefcaseBusiness size={ICON_SIZE} />}
+      text='Experience'
+    />
+  )
 }
 
 export const AboutIcon: FC = () => {
-  return <IconWithText icon={<icons.CircleUserRound />} text='About' />
+  return (
+    <IconWithText
+      icon={<icons.CircleUserRound size={ICON_SIZE} />}
+      text='About'
+    />
+  )
 }
 
 export const ContactIcon: FC = () => {
-  return <IconWithText icon={<icons.Mailbox />} text='Contact' />
+  return (
+    <IconWithText icon={<icons.Mailbox size={ICON_SIZE} />} text='Contact' />
+  )
 }
