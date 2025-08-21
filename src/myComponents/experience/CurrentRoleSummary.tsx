@@ -25,33 +25,33 @@ const CurrentRoleSummary: FC = () => {
         <div className='flex flex-wrap gap-2'>
           <Badge
             variant='default'
-            className='bg-blue-700 hover:bg-blue-200 text-xs sm:text-sm px-2 py-1'
+            className='bg-blue-700 text-xs sm:text-sm px-2 py-1'
           >
             <span className='hidden sm:inline'>Software Engineering</span>
             <span className='sm:hidden'>Software</span>
           </Badge>
           <Badge
             variant='default'
-            className='bg-green-700 hover:bg-green-200 text-xs sm:text-sm px-2 py-1'
+            className='bg-green-700 text-xs sm:text-sm px-2 py-1'
           >
             Teaching
           </Badge>
           <Badge
             variant='default'
-            className='bg-purple-700 hover:bg-purple-200 text-xs sm:text-sm px-2 py-1'
+            className='bg-purple-700 text-xs sm:text-sm px-2 py-1'
           >
             Research
           </Badge>
           <HoverLink
             href='https://www.imperial.ac.uk/computing/'
             text='Department of Computing, Imperial College London'
-            icon={<AtSignIcon size={14}/>}
+            icon={<AtSignIcon size={14} />}
           />
         </div>
       </div>
 
       <Tabs defaultValue='software' className='w-full'>
-        <TabsList className='flex bg-gray-900 rounded-lg p-1 mb-2 gap-1 sm:gap-8 w-full overflow-x-auto'>
+        <TabsList className='flex bg-gray-900 rounded-lg p-1 mb-2 gap-1 w-full overflow-x-auto'>
           <TabsTrigger
             value='software'
             className={`${tabTriggerBase} ${tabVariants.software} flex-shrink-0 text-xs sm:text-sm px-2 sm:px-4 py-2`}
