@@ -15,11 +15,11 @@ interface NavigationItemProps {
 const NavigationItem: FC<NavigationItemProps> = ({ href, content }) => {
   return (
     <NavigationMenuItem>
-      <Link href={href} passHref>
-        <NavigationMenuLink className='hover:text-blue-400'>
+      <NavigationMenuLink asChild>
+        <Link href={href} className='hover:text-blue-400'>
           {content}
-        </NavigationMenuLink>
-      </Link>
+        </Link>
+      </NavigationMenuLink>
     </NavigationMenuItem>
   )
 }
