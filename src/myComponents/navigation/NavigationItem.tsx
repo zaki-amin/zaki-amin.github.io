@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import {
   NavigationMenuItem,
@@ -13,7 +15,7 @@ interface NavigationItemProps {
 const NavigationItem: FC<NavigationItemProps> = ({ href, content }) => {
   return (
     <NavigationMenuItem>
-      <Link href={href} legacyBehavior passHref>
+      <Link href={href} passHref>
         <NavigationMenuLink className='hover:text-blue-400'>
           {content}
         </NavigationMenuLink>
