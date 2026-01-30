@@ -49,6 +49,19 @@ const EmailForm: FC = () => {
             {...register('botcheck')}
           ></input>
 
+          <div className='mb-3 rounded-md bg-slate-900/60 border border-dashed border-slate-700 px-4 py-3 text-sm text-gray-200'>
+            <p>Want to reach me directly?</p>
+            <p className='mt-1 font-semibold text-white'>
+              Email:&nbsp;
+              <a
+                className='underline underline-offset-4 hover:text-green-300'
+                href='mailto:zaki.s.amin.17@gmail.com'
+              >
+                zaki.s.amin.17@gmail.com
+              </a>
+            </p>
+          </div>
+
           <div className='mb-5'>
             <h3 className='text-sm font-semibold text-green-300'>Name</h3>
             <input

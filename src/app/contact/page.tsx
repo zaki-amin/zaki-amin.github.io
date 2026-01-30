@@ -4,7 +4,7 @@ import PageHeader from '@/myComponents/layout/PageHeader'
 import Subsection from '@/myComponents/Subsection'
 import HoverLink from '@/myComponents/navigation/HoverLink'
 import EmailForm from '@/myComponents/contact/EmailForm'
-import { GithubIcon, LinkedinIcon } from 'lucide-react'
+import { GithubIcon, LinkedinIcon, MailIcon } from 'lucide-react'
 
 export const metadata = {
   title: 'Zaki Amin - Contact',
@@ -34,6 +34,16 @@ export default function About() {
               text='GitHub'
               icon={<GithubIcon size={ICON_SIZE} />}
             />
+          </li>
+          <li>
+            <HoverLink
+              href='mailto:zaki.s.amin.17@gmail.com'
+              text='Email'
+              icon={<MailIcon size={ICON_SIZE} />}
+            />
+            <p className='ml-6 text-sm text-gray-300'>
+              Prefer a direct note? I typically reply within 24 hours.
+            </p>
           </li>
         </ul>
       </Subsection>
