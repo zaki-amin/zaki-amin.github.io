@@ -4,6 +4,7 @@ import PageHeader from '@/myComponents/layout/PageHeader'
 import Subsection from '@/myComponents/Subsection'
 import HoverLink from '@/myComponents/navigation/HoverLink'
 import EmailForm from '@/myComponents/contact/EmailForm'
+import LocationInfo from '@/myComponents/contact/LocationInfo'
 import { GithubIcon, LinkedinIcon } from 'lucide-react'
 
 export const metadata = {
@@ -18,6 +19,10 @@ export default function About() {
     <>
       <BreadcrumbWithIcon icon={<ContactIcon />} />
       <PageHeader title='Contact' />
+
+      <Subsection title='Location'>
+        <LocationInfo />
+      </Subsection>
 
       <Subsection title='Profiles'>
         <ul className='list-disc pl-8'>
